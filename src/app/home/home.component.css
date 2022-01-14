@@ -1,0 +1,58 @@
+.page{
+   font-family: Cinzel;
+}
+.carousel-caption {
+    position: absolute;
+    top:40px;
+ }
+ .carousel-caption,h1 {
+     font-size: 40px;
+    font-weight: bold;
+    font-style: oblique;
+ }
+ .row {
+    margin: 30px;
+ }
+
+ #forms {
+    background-image: url("../../assets/Images/bg_home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 280px;
+ }
+
+ #service1 {
+    color: lightsalmon;
+ }
+ #service2 {
+    color: lightgreen;
+ }
+ #service3 {
+    color: lightblue;
+ }
+ #service4 {
+    color: lemonchiffon;
+ }
+ #service5 {
+    color: gray;
+ }
+
+ #heading {
+    font-size: 50px;
+    font-weight: bold;
+ }
+ 
+ input {
+    padding: 18px;
+ }
+
+ select {
+    padding: 18px;
+ }
+
+ .card {
+    text-align: center;
+    background-image: url('../../assets/Images/bgcard.jpeg');
+    background-position: absolute;
+ }

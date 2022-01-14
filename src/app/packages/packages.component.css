@@ -1,0 +1,13 @@
+
+ .card {
+    text-align: center;
+    background-image: url('../../assets/Images/bgcard.jpeg');
+  
+    background-position: absolute;
+ }
+
+ #heading {
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+ }
