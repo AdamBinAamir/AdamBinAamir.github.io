@@ -1,6 +1,15 @@
 
  #heading {
     font-size: 50px;
-    color: white;
+    color: goldenrod;
     font-weight: bold;
  }
+ #bg{
+    background-image: url('../../assets/Images/bgabout.jpeg');
+    background-position: center;
+ }
+
+ .btn-success:hover{
+   background-color: goldenrod;
+   border-color: goldenrod;
+}

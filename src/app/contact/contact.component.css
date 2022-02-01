@@ -1,7 +1,14 @@
 #forms {
-    background-image: url("../../assets/Images/contactbg.jpeg");
+    background-image: url("../../assets/Images/bgserv.jpeg");
     background-position: center;
-    background-repeat: no-repeat;
     padding-top: 80px;
     padding-bottom: 150px;
  }
+
+a:hover{
+   opacity: 0.6;
+}
+ #para{
+    color: lightgray;
+    margin-bottom: 30px;
+  }

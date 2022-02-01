@@ -1,9 +1,22 @@
 .page{
    font-family: Cinzel;
 }
+#bg{
+   background-image: url('../../assets/Images/bgservice.jpeg');
+   background-position: center;
+}
 .carousel-caption {
     position: absolute;
     top:40px;
+ }
+
+ .btn-success:hover{
+   background-color: goldenrod;
+   border-color: goldenrod;
+}
+ .btn-warning:hover{
+    background-color: green;
+    border-color: green;
  }
  .carousel-caption,h1 {
      font-size: 40px;
@@ -18,26 +31,16 @@
     background-image: url("../../assets/Images/bg_home.jpg");
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: -160px;
     padding-top: 200px;
     padding-bottom: 280px;
+    margin-bottom: -160px;
  }
-
- #service1 {
-    color: lightsalmon;
- }
- #service2 {
-    color: lightgreen;
- }
- #service3 {
-    color: lightblue;
- }
- #service4 {
-    color: lemonchiffon;
- }
- #service5 {
-    color: gray;
- }
-
+hr{
+   color: gray;
+   height: 2px;
+   opacity: 0.8;
+}
  #heading {
     font-size: 50px;
     font-weight: bold;
@@ -51,8 +54,3 @@
     padding: 18px;
  }
 
- .card {
-    text-align: center;
-    background-image: url('../../assets/Images/bgcard.jpeg');
-    background-position: absolute;
- }

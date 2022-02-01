@@ -1,42 +1,11 @@
-<section>
-    <div class="container" style="text-align: center; margin-top: 50px; margin-bottom: 80px; color: white;">
-      <p id="heading" style="margin-top: 90px; margin-bottom: 80px;">Our Services</p>
-      <div class="row">
-        <div class="col-md-3">
-          <h4 id="service1" style="margin-bottom: -10px;">Basic Quran Reading / Recitation</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service2" style="margin-bottom: 35px;">Recitation with Tajweed</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service3" style="margin-bottom: 35px;">Quran Memorization</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service4" style="margin-bottom: 35px;">Quran Translation</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div><hr>
-      </div>
-      <div class="row">
-        <div class="col-md-3">
-          <h4 id="service3" style="margin-bottom: -10px;">Islamic Studies / Concepts</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service4" style="margin-bottom: 35px;">Quran Courses for Kids</h4><hr>
-          <p id="service5">Teaching at a young age is like carving on stone. This means that when you learn something at a young age, you will probably remember it for life. especially Quran for kids course.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service1" style="margin-bottom: 35px;">Hadith Classes</h4><hr>
-          <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-        <div class="col-md-3">
-          <h4 id="service2" style="margin-bottom: 35px;">Flexible Timings</h4><hr>
-          <p id="service5">The courses are scheduled according to the convenience of the students, so that learning the Quran can easily be adjusted according to their daily routine without any hassle.</p>
-        </div><hr>
+<section id="bgserv">
+  <div class="container" style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: white;">
+    <p id="heading" style="margin-top: 30px; margin-bottom: 80px;">Our Services</p>
+    <div class="row">
+      <div class="col-md-6 mb-4" *ngFor='let s of services'>
+        <h4 [style.color]="s.color" [style.margin-bottom]="s.mgb">{{s.heading}}</h4><hr>
+        <p [style.color]="s.pb">{{s.para}}</p>
       </div>
     </div>
-  </section>
-  
+  </div>
+</section>

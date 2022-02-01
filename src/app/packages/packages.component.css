@@ -2,12 +2,33 @@
  .card {
     text-align: center;
     background-image: url('../../assets/Images/bgcard.jpeg');
-  
     background-position: absolute;
+      padding: 1.5em .5em .5em;
+      border-radius: 2em;
+      text-align: center;
+      box-shadow: 0 5px 10px black;
  }
 
+ a.btn:hover,
+a.btn-primary:hover {
+  opacity: 0.6;
+}
  #heading {
     font-size: 50px;
-    color: white;
+    color: goldenrod;
     font-weight: bold;
+    padding-top: 70px;
+    margin-bottom: 20px;
+    text-align: center;
+ }
+
+ #packages{
+   background-image: url("../../assets/Images/bgpackages.jpeg");
+   background-position: center;
+ }
+
+ #para{
+   text-align: center;
+   color: lightgray;
+   margin-bottom: 50px;
  }

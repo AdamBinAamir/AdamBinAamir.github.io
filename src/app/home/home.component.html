@@ -39,47 +39,17 @@
   </div>  
 </section>
 
-<section>
-  <div class="container" style="text-align: center; margin-top: 50px; color: white;">
-    <p id="heading" style="margin-bottom: 30px;">Learn Quran Online</p>
-    <p style="font-size: larger;">QuranInn is an independent / non-partisan virtual institution / firm / establishment / body that aims at providing / imparting islamic education to seekers across the globe. Our teacher with years of experience and noble accolades, deliver teachings of Quran and islam to all age groups without gender discrimination. We offer online / virtual courses / classes / live interactive sessions for students / learners who find it difficult to join / take in-person classes. Our virtual school / institute brings efficient Quran learning / Islam learning right to your home and the students have the freedom to juggle their careers and school without being tied to a fixed schedule / with scheduling flexibility. With a comfortable learning environment and more individual attention, we offer multiple courses for aspirants to choose from.</p><br>
+<section id="bg">
+  <div class="container" style="text-align: center; padding-top: 50px; padding-bottom: 50px; color: white;" *ngFor='let a of about'>
+    <p id="heading" style="padding-bottom: 10px;">{{a.heading}}</p>
+    <p style="font-size: larger; color: gray;">{{a.para}}</p><br>
     <a href="#forms" class="btn btn-success" role="button">Get a Free Trial of<br>Online Quran Class</a>
     <p id="heading" style="margin-top: 90px; margin-bottom: 80px;">Our Services</p>
     <div class="row">
-      <div class="col-md-3">
-        <h4 id="service1" style="margin-bottom: -10px;">Basic Quran Reading / Recitation</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+      <div class="col-md-6 mb-4" *ngFor='let s of services'>
+        <h4 [style.color]="s.color" [style.margin-bottom]="s.mgb">{{s.heading}}</h4><hr>
+        <p [style.color]="s.pb">{{s.para}}</p>
       </div>
-      <div class="col-md-3">
-        <h4 id="service2" style="margin-bottom: 35px;">Recitation with Tajweed</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-md-3">
-        <h4 id="service3" style="margin-bottom: 35px;">Quran Memorization</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-md-3">
-        <h4 id="service4" style="margin-bottom: 35px;">Quran Translation</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div><hr>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <h4 id="service3" style="margin-bottom: -10px;">Islamic Studies / Concepts</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-md-3">
-        <h4 id="service4" style="margin-bottom: 35px;">Quran Courses for Kids</h4><hr>
-        <p id="service5">Teaching at a young age is like carving on stone. This means that when you learn something at a young age, you will probably remember it for life. especially Quran for kids course.</p>
-      </div>
-      <div class="col-md-3">
-        <h4 id="service1" style="margin-bottom: 35px;">Hadith Classes</h4><hr>
-        <p id="service5">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-      </div>
-      <div class="col-md-3">
-        <h4 id="service2" style="margin-bottom: 35px;">Flexible Timings</h4><hr>
-        <p id="service5">The courses are scheduled according to the convenience of the students, so that learning the Quran can easily be adjusted according to their daily routine without any hassle.</p>
-      </div><hr>
     </div>
   </div>
 </section>
@@ -88,36 +58,28 @@
   <div class="container">
     <div class="col-md-5">
     <p id="heading" style=" color: white;">2 Free Trial <br> Online Classes</p><br><br>
-        <form class="form-horizontal" action="mailto:quraninn@gmail.com" method="post" enctype="text/plain">
+        <form class="form-horizontal" method="post" action="mailto:qurainn@gmail.com?subject=Query for Trial Quran Classes" enctype="text/plain">
           <div class="form-group form-group-lg">
-            <label class="control-label" for="fname"></label>
-            <input type="fname" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
-            <label class="control-label" for="lname"></label>
-            <input type="lname" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
-            <label for="gender"></label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Gender</option>
-              <option value="1">Male</option>
-              <option value="2">Female</option>
-              <option value="3">Other</option>
-            </select>
-            <label class="control-label" for="age"></label>
-            <input type="age" class="form-control" id="age" placeholder="Enter Age" name="age">
-            <label for="gender"></label>
-            <select class="form-select" aria-label="Default select example">
-              <option selected>Course</option>
-              <option value="1">Basic Quran Reading / Recitation</option>
-              <option value="2">Quran Memorization</option>
-              <option value="3">Hadith Classes</option>
-            </select>
-            <label class="control-label" for="phone"></label>
-            <input type="phone" class="form-control" id="phone" placeholder="Enter Phone" name="phone">
-            <label class="control-label" for="Email"></label>
-            <input type="email" class="form-control" id="email" placeholder="Enter Email" name="email">
-            <br><input class="btn btn-warning" style="padding-right: 20px; float: right;" type="submit" value="Submit">
+            <input type="text" class="form-control" id="First Name " placeholder="First Name" name="First Name " required>
+            <input type="text" class="form-control mb-3 mt-3" id="Last Name " placeholder="Last Name" name="Last Name " required>
+            <input class="form-control mb-3 mt-3" list="genders" name="Gender " id="Gender " placeholder="Gender">
+            <datalist id="genders">
+              <option value="Male">
+              <option value="Female">
+              <option value="Other">
+            </datalist>
+            <input type="number" class="form-control" id="Age " placeholder="Age" name="Age " required>
+            <input class="form-control mb-3 mt-3" list="Courses" name="Course " id="Course " placeholder="Course">
+            <datalist id="Courses">
+              <option value="Basic Quran Reading/Recitation">
+              <option value="Quran Memorization">
+              <option value="Hadith Classes">
+            </datalist>
+            <input type="tel" class="form-control mb-3 mt-3" id="Phone/Whatsapp " placeholder="Phone/Whatsapp" name="Phone/Whatsapp " required>
+            <input type="email" class="form-control" id="Email " placeholder="Email" name="Email " required>
+            <br><input class="btn btn-warning btn-lg float-end" type="submit" value="Submit">
           </div>
         </form>
   </div>
 </div>
 </section>
-</div>

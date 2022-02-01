@@ -1,65 +1,38 @@
 
-<section>
-    <div class="container" style="margin-bottom: 100px;">
-      <p id="heading" style="margin-top: 80px; margin-bottom: 20px; text-align: center;">Fee Packages</p>
-      <p style="text-align: center; color: white; font-weight: bold; margin-bottom: 50px;">Choose your best suited weekly plan/schedule or get one customised and apply for a trial class. <br> 2 days trial period for free! <br> Get a sibling discount or request weekend sessions at a fair price/cost.</p>
+<section id="packages">
+    <div class="container" style="padding-bottom: 100px;">
+      <p id="heading">Fee Packages</p>
+      <p id="para">Choose your best suited weekly plan/schedule or get one customised and apply for a trial class. <br> 2 days trial period for free! <br> Get a sibling discount or request weekend sessions at a fair price/cost.</p>
       <div class="row">
-        <div class="col-md-3">
-          <div class="card">
+        <div class="col-md-6" *ngFor = 'let p of packages'>
+          <div class="card" style="margin: 40px;">
             <div class="card-body">
-              <h5 class="card-title">3 DAYS PER WEEK</h5><h4 style="color: coral;">PLAN A</h4>
-              <p class="card-text">
-                3 Lessons Per Week <br>
-                6 hrs Per Month <br>
-                30 mins LIVE Lessons <br>
-                100% Money Back <br> Guarantee </p>
-                <h4 style="color: green;">$40</h4>  
-                <p>Instead of $60 <br>
-                SAVE $20</p>
-              <a href="#" class="btn btn-success">Register Now</a>
+              <h3 class="card-title mt-3">{{p.heading1}}</h3>
+              <h2 [style.color]="p.color" class="pb-4 pt-4">{{p.heading2}}</h2>
+              <ul style="list-style-type:none; margin: 0px; padding: 0px;">
+                <li *ngFor='let d of p.description;'>
+                  <p>{{d}}</p>
+                </li>
+              </ul>
+              <a href="#forms" class="btn btn-lg btn-success mt-1">Contact for Price</a><br><br>
             </div>
           </div>
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">4 DAYS PER WEEK</h5><h4 style="color: coral;">PLAN B</h4>
-              <p class="card-text">4 Lessons Per Week <br>
-                8 hrs Per Month <br>
-                30 mins LIVE Lessons <br>
-                100% Money Back <br> Guarantee</p>
-                <h4 style="color: green;">$50</h4> 
-                <p>Instead of $80 <br>
-                SAVE $30</p>
-              <a href="#" class="btn btn-success">Register Now</a>
-            </div>
-          </div>
+      </div>
+      <h4 class="text-center text-light mt-4">We accept payments through Xoom by Paypal, Credit card, VISA card and Master card.</h4>
+      <div class="row" style="background-image: url('../../assets/Images/bgcard.jpeg'); background-position: absolute;">
+        <div class="col-sm-4"></div>
+        <div class="col-md-1">
+          <img src="../../assets/Images/xoom.png" alt="xoom" style="width: 80px;">
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">5 DAYS PER WEEK</h5><h4 style="color: coral;">PLAN C</h4>
-              <p class="card-text">5 Lessons Per Week <br> 10 hrs Per Month <br>
-                30 mins LIVE Lessons <br>
-                100% Money Back <br> Guarantee </p>
-                <h4 style="color: green;">$60</h4> <p>Instead of $80 <br>
-                SAVE $30</p>
-              <a href="#" class="btn btn-success">Register Now</a>
-            </div>
-          </div>
+        <div class="col-md-1">
+          <img src="../../assets/Images/visa.png" alt="visa" style="width: 120px; padding-top: 20px; margin-right: 20px; margin-left: -10px;">
         </div>
-        <div class="col-md-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">3 DAYS PER WEEK</h5><h4 style="color: coral;">PLAN D</h4>
-              <p class="card-text">3 Lessons Per Work <br> 12 hrs Per Month <br>
-                60 mins LIVE Lessons <br>
-                100% Money Back <br> Guarantee </p>
-                <h4 style="color: green;">$72</h4> <p>Instead of $108 <br>
-                SAVE $36</p>
-              <a href="#" class="btn btn-success">Register Now</a>
-            </div>
-          </div>
+        <div class="col-md-1">
+          <img src="../../assets/Images/mastercard.png" alt="mastercard" style="width: 100px; margin-top: 10px; margin-left: 20px; ">
+        </div>
+        <div class="col-md-1">
+          <img src="../../assets/Images/paypal.png" alt="paypal" style="width: 100px; padding-top: 10px; margin-left: 30px; ">
         </div>
       </div>
     </div>
