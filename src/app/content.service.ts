@@ -12,7 +12,7 @@ services:any[]=[
       mgb: "25px",
       pb: "30px",
       heading: "Basic Quran Reading / Recitation",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      para: "The Quran Reading course is designed for students who already know the basics and can recite the Quran. Our teachers will help them understand tajweed and recite Quran in the best possible way."
     },
     {
       color: "lightgreen",
@@ -26,35 +26,35 @@ services:any[]=[
       mgb: "25px",
       pb: "30px",
       heading: "Quran Memorization",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."  
+      para: "The Quran memorisation course is for those who want to memorise the Qur’an. Our teachers will provide help and guidance to students and make them memorise the Quran fully."
     },
     {
       color: "lemonchiffon",
       mgb: "25px",
       pb: "30px",
       heading: "Quran Translation",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      para: "The Quran translation course provides learners with the opportunity to translate the Quran word by word and understand the meaning of it with the reference of Hadiths. This course is very useful for understanding the Qur’an properly. Our teachers will guide you at every step and clear all the confusions along the way."
     },
     {
       color: "lightgreen",
       mgb: "25px",
       pb: "30px",
       heading: "Islamic Studies / Concepts",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      para: "Islamic Studies course is designed to understand the concepts of islam. The course starts with the basic five pillars of islam and moves on to more concepts. The teachers will deliver lectures on islam to the students."
     },
     {
       color: "lightblue",
       mgb: "25px",
       pb: "30px",
       heading: "Quran Courses for Kids",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      para: "The most special course offered by us is the Qur’an learning course for kids. We start out with basic Qaida and move on to reading the Qur’an in just a few months. Our teachers are specialised to teach kids of any age."
     },
     {
       color: "lemonchiffon",
       mgb: "25px",
       pb: "30px",
       heading: "Hadith Classes",
-      para: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      para: "The Hadith class will help you understand Hadiths. Our teachers will help you understand the meaning of Hadiths and provide you with the necessary references."
     },
     {
       color: "coral",
